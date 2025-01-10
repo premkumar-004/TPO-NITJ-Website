@@ -108,9 +108,8 @@ const StudentDashboards = () => {
       <div className="flex flex-1 mt-16">
         {/* Sidebar */}
         <aside
-          className={`fixed z-20 bg-white border-gray-200 transition-all duration-300 sm:top-0 sm:left-0 sm:bottom-0 w-full top-0 sm:h-screen ${
-            isOpen ? "sm:w-60 h-full" : "sm:w-16 h-0"
-          } border-r sm:border-b-0 border-b`}
+          className={`fixed z-20 bg-white border-gray-200 transition-all duration-300 sm:top-0 sm:left-0 sm:bottom-0 w-full top-0 sm:h-screen ${isOpen ? "sm:w-60 h-full" : "sm:w-16 h-0"
+            } border-r sm:border-b-0 border-b`}
         >
           {isOpen && (
             <h1 className="font-bold text-2xl sm:text-1xl lg:text-2xl text-center tracking-wide mt-4">
@@ -137,13 +136,11 @@ const StudentDashboards = () => {
                         navigate(item.path);
                         if (innerWidth < 625) setIsOpen(false);
                       }}
-                      className={`flex items-center sm:w-full ${
-                        isOpen ? "w-full" : "w-fit"
-                      } text-left px-2 py-2 rounded-lg ${
-                        location.pathname === item.path
+                      className={`flex items-center sm:w-full ${isOpen ? "w-full" : "w-fit"
+                        } text-left px-2 py-2 rounded-lg ${location.pathname === item.path
                           ? "bg-custom-blue text-white"
                           : "text-gray-600 hover:bg-blue-50"
-                      }`}
+                        }`}
                     >
                       <FontAwesomeIcon icon={item.icon} className="mr-3" />
                       {isOpen && <span>{item.label}</span>}
@@ -184,9 +181,8 @@ const StudentDashboards = () => {
 
         {/* Main Content */}
         <main
-          className={`flex-1 flex flex-col transition-all duration-300 ${
-            isOpen ? "sm:ml-60" : "sm:ml-16"
-          }`}
+          className={`flex-1 flex flex-col transition-all duration-300 ${isOpen ? "sm:ml-60" : "sm:ml-16"
+            }`}
         >
           <div className="flex-grow">
             <Routes>
